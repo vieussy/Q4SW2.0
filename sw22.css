@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+	background: #e7dbd0;
+	text-align: center;
+}
+
+.container{
+	padding: 18px;
+	background: #fffbfa;
+	width: 300px;
+	height: 125px;
+	border-radius: 40px;
+	display: flexbox;
+	margin-left: 400px;
+	margin-top: 30px;
+}
+
+.container2{
+	padding: 18px;
+	background: #fffbfa;
+	width: 300px;
+	height: 125px;
+	border-radius: 40px;
+	display: flexbox;
+	margin-left: 776px;
+	margin-top: -352.9px;
+}
+
+.container3{
+	padding: 18px;
+	background: #fffbfa;
+	width: 300px;
+	height: 125px;
+	border-radius: 40px;
+	display: flexbox;
+	margin-left: 776px;
+	margin-top: 30px;
+}
+
+h3{
+	font-family: 'Press Start 2P', cursive;
+	letter-spacing: 2px;
+	margin: 7px;
+}
+
+input{
+	background-color: #e7dbd0;
+	border: none;
+	margin-top: none;
+	margin-bottom: 10px;
+	padding: 4px;
+	border-radius: 20px;
+	width: 180px;
+	height: 18px;
+}
+
+button{
+	background-color: #e3ded9;
+	border: none;
+	padding: 8px;
+	border-radius: 10px;
+	-webkit-text-fill-color: #ffffff;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 10px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.outpcon p{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 24px;
+	word-wrap: break-word;
+	margin: 20px;
+ }
+ h1{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 35px;
+ }
+
+.outpcon{
+	background-color: #ffffff;
+	border-radius: 20px;
+	border: dashed 5px;
+	border-color: #e7dbd0;
+	margin-top: 90px;
+	margin-bottom: 90px;
+	margin-left: 600px;
+	display: flexbox;
+	height: fit-content;
+	width: 290px;
+}
+
+input:focus, textarea:focus, select:focus{
+	outline: none;
+}

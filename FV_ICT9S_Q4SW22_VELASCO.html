@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Conversion</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="sw22.css"> 
+</head>
+<body>
+	
+	<h1>TIME CONVERSION</h1>
+
+	<div class="outpcon">
+		<p id="output">0</p>
+	</div>
+
+	<div class="container">
+		<h3>SECONDS</h3>
+		<input type="number" name="" id="SecondsInput">
+		<br>
+		<button onclick="convertSecondsToMinutes()">TO MINUTES</button>
+		<button onclick="convertSecondsToHours()">TO HOURS</button>
+		<button onclick="convertSecondsToDays()">TO DAYS</button>
+	</div>
+	<div class="container">
+		<h3>MINUTES</h3>
+		<input type="number" name="" id="MinutesInput">
+		<br>
+		<button onclick="convertMinutesToSeconds()">TO SECONDS</button>
+		<button onclick="convertMinutesToHours()">TO HOURS</button>
+		<button onclick="convertMinutesToDays()">TO DAYS</button>
+	</div>
+	<div class="container2">
+		<h3>HOURS</h3>
+		<input type="number" name="" id="HoursInput">
+		<br>
+		<button onclick="convertHoursToSeconds()">TO SECONDS</button>
+		<button onclick="convertHoursToMinutes()">TO MINUTES</button>
+		<button onclick="convertHoursToDays()">TO DAYS</button>
+	</div>
+	<div class="container3">
+		<h3>DAYS</h3>
+		<input type="number" name="" id="DaysInput">
+		<br>
+		<button onclick="convertDaysToSeconds()">TO SECONDS</button>
+		<button onclick="convertDaysToMinutes()">TO MINUTES</button>
+		<button onclick="convertDaysToHours()">TO HOURS</button>
+	</div>
+
+	<script>
+		
+		/*SECONDS*/
+
+		function convertSecondsToMinutes() {
+			const SecondsInput = document.getElementById("SecondsInput").value;
+
+			const minutes = SecondsInput / 60;
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${minutes}`;
+		}
+		function convertSecondsToHours() {
+			const SecondsInput = document.getElementById("SecondsInput").value;
+
+			const hours = SecondsInput / 3600;
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${hours}`;
+		}
+		function convertSecondsToDays() {
+			const SecondsInput = document.getElementById("SecondsInput").value;
+  
+			const days = SecondsInput / 86400;
+
+			const outputElement = document.getElementById("output")
+			outputElement.textContent = `${days}`
+		}
+
+		/*SECONDS*/
+
+		/*MINUTES*/
+
+		function convertMinutesToSeconds() {
+			const MinutesInput = document.getElementById("MinutesInput").value;
+
+			const seconds = MinutesInput * 60;
+
+			const outputElement = document.getElementById("output").toFixed(2);
+			outputElement.textContent = `${seconds}`;
+		}
+		function convertMinutesToHours() {
+			const MinutesInput = document.getElementById("MinutesInput").value;
+
+			const hours = MinutesInput / 60;
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${hours}`;
+		}
+		function convertMinutesToDays() {
+			const MinutesInput = document.getElementById("MinutesInput").value;
+
+			const hours = MinutesInput / 1440;
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${hours}`;
+		}
+		/*MINUTES*/
+
+		/*HOURS*/
+
+		function convertHoursToSeconds() {
+			const HoursInput = document.getElementById("HoursInput").value;
+
+			const seconds = HoursInput * 3600;
+			
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${seconds}`;
+	
+		}
+		function convertHoursToMinutes() {
+			const HoursInput = document.getElementById("HoursInput").value;
+
+			const minutes = HoursInput * 60;
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${minutes}`;
+		}
+		function convertHoursToDays() {
+			const HoursInput = document.getElementById("HoursInput").value;
+
+			const days = HoursInput / 24;
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${days}`;
+		}
+
+		/*HOURS*/
+
+		/*DAYS*/
+
+		function convertDaysToSeconds() {
+			const DaysInput = document.getElementById("DaysInput").value;
+
+			const seconds = DaysInput * 86400;
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${seconds}`;
+		}
+		function convertDaysToMinutes() {
+			const DaysInput = document.getElementById("DaysInput").value;
+
+			const minutes = DaysInput * 1440;
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${minutes}`;
+		}
+		function convertDaysToHours() {
+			const DaysInput = document.getElementById("DaysInput").value;
+
+			const days = DaysInput * 24;
+
+			const outputElement = document.getElementById("output");
+			outputElement.textContent = `${days}`;
+		}
+
+		/*DAYS*/
+
+	</script>
+</body>
+</html>
